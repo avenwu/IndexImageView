@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IndexImageView</string>
+    <integer-array name="gradient_color">
+        <item>@color/transparent</item>
+        <item>@color/transparent</item>
+        <item>@color/transparent</item>
+        <item>@color/transparent</item>
+        <item>@color/grey</item>
+    </integer-array>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#33eeeeee</color>
+</resources>
