@@ -1,0 +1,79 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.avenwu.imageview"
+        minSdkVersion 8
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+version = "1.0.0"
+group = "com.avenwu.imageview"
+
+configurations {
+    archives {
+        extendsFrom configurations.default
+    }
+}
+
+signing {
+    required { has("release") && gradle.taskGraph.hasTask("uploadArchives") }
+    sign configurations.archives
+}
+uploadArchives {
+    configuration = configurations.archives
+    repositories.mavenDeployer {
+        beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+        repository(url: sonatypeRepo) {
+            authentication(userName: sonatypeUsername,
+                    password: sonatypePassword)
+        }
+
+        pom.project {
+            name 'IndexImageView'
+            packaging 'aar'
+            description 'The widget extend from standard ImageView with some usefull effects:\n' +
+                    '1.it\'s content is clipped in circle shape;\n' +
+                    '2.Inner gradient is available;\n' +
+                    '2.One can add text index on top-left of the image easily;'
+            url 'https://github.com/avenwu/IndexImageView'
+
+            scm {
+                url 'scm:https://github.com/avenwu/IndexImageView.git'
+                connection 'https://github.com/avenwu/IndexImageView.git'
+                developerConnection 'scm:https://github.com/avenwu/IndexImageView.git'
+            }
+
+            licenses {
+                license {
+                    name 'The MIT License (MIT)'
+                    url 'http://mit-license.org/'
+                    distribution 'repo'
+                }
+            }
+
+            developers {
+                developer {
+                    id 'myid'
+                    name 'Chaobin'
+                    email 'chaobinwu89@gmail.com'
+                }
+            }
+        }
+    }
+}

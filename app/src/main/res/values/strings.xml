@@ -1,12 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">IndexImageView</string>
-    <integer-array name="gradient_color">
-        <item>@color/transparent</item>
-        <item>@color/transparent</item>
-        <item>@color/transparent</item>
-        <item>@color/transparent</item>
-        <item>@color/grey</item>
-    </integer-array>
-    <color name="transparent">#00000000</color>
-    <color name="grey">#33eeeeee</color>
+
+    <string name="app_name">Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="default_style">Default config:</string>
 </resources>
