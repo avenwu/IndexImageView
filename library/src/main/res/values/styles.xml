@@ -6,7 +6,7 @@
         <item name="circleBackground">#2B6695</item>
         <item name="gradientColorArray">@array/gradient_color</item>
         <item name="indexEnable">true</item>
-        <item name="gradientEnable">true</item>
+        <item name="gradientEnable">false</item>
         <item name="strokeColor">@android:color/white</item>
         <item name="strokeWidth">2dp</item>
     </style>

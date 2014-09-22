@@ -2,23 +2,43 @@ IndexImageView
 ==============
 
 A kind of circular image widget for Android OS 
-![Screenshot](https://github.com/avenwu/IndexImageView/raw/master/s-1.png)
 
 	#clone
 	git clone https://github.com/avenwu/IndexImageView.git
 
+![Screenshot](https://github.com/avenwu/IndexImageView/raw/master/device-2014-09-22-231400.png)
+
 ## Features
+The main feature can be seen from the snapshot above; 
+
+- Set Text index above the image view;
+- Add configured border;
+- Inner gradient available;
 
 ## Usage
-	<com.avenwu.cnblogs.widget.IndexImageView
-		app:indexEnable="false"
-		app:strokeWidth="2dp"
-		app:gradientEnable="false"
-		android:layout_width="@dimen/avatar_profile_large"
-		android:layout_height="@dimen/avatar_profile_large"
-		android:id="@+id/iv_avatar"
-		android:src="@drawable/default_user_shape"/>
+Most attributes of IndexImageView can be configured through xml;
+    
+    <com.avenwu.imageview.IndexImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image1"
+        android:scaleType="centerCrop"
+        app:indexText="100"
+        app:indexFontSize="20sp"
+        app:indexBackground="#ff5722"
+        app:gradientEnable="false"
+        app:circleBackground="#cddc39"
+        app:strokeColor="#259b24" />
 		
+However you can also make new instance dynamically;
+
+    IndexImageView imageView = new IndexImageView(this);
+    imageView.setImageResource(R.drawable.image1);
+    imageView.setIndexEnable(true);
+    imageView.setText("121");
+    
+For more detail please look into the sample app;
+
 ##Contributions
 Any improvemet on this project will be appreaciated, so you can fork it and make changes freely and pull requests.
 

@@ -14,9 +14,11 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+//		setContentView(R.layout.activity_main);
 		IndexImageView imageView = new IndexImageView(this);
-		imageView.setImageResource(R.color.grey);
+		imageView.setImageResource(R.drawable.image1);
+        imageView.setIndexEnable(true);
+        imageView.setText("121");
 		FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(200, 200);
 		imageView.setLayoutParams(layoutParams);
 		addContentView(imageView, layoutParams);
