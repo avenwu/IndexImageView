@@ -7,13 +7,13 @@
     android:orientation="vertical"
     android:background="#2B6695">
 
-    <com.avenwu.imageview.IndexImageView
+    <com.github.avenwu.imageview.IndexImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/image1"
         app:indexBackground="#259b24"/>
 
-    <com.avenwu.imageview.IndexImageView
+    <com.github.avenwu.imageview.IndexImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/image1"
@@ -25,7 +25,7 @@
         app:circleBackground="#cddc39"
         app:strokeColor="#259b24" />
 
-    <com.avenwu.imageview.IndexImageView
+    <com.github.avenwu.imageview.IndexImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/image1"
