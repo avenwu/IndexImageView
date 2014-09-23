@@ -1,4 +1,4 @@
-package com.avenwu.imageview;
+package com.github.avenwu.imageview;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;
