@@ -21,8 +21,9 @@ android {
     }
 }
 //apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
-version = "1.0.0"
-group = "com.github.avenwu.imageview"
+version = "1.0.0-SNAPSHOT"
+archivesBaseName = "IndexImageView"
+group = "com.github.avenwu"
 
 configurations {
     archives {
@@ -31,7 +32,7 @@ configurations {
 }
 
 signing {
-    required { has("release") && gradle.taskGraph.hasTask("uploadArchives") }
+    required { gradle.taskGraph.hasTask("uploadArchives") }
     sign configurations.archives
 }
 uploadArchives {
@@ -40,8 +41,7 @@ uploadArchives {
         beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
         repository(url: sonatypeRepo) {
-            authentication(userName: sonatypeUsername,
-                    password: sonatypePassword)
+            authentication(userName: sonatypeUsername, password: sonatypePassword)
         }
 
         pom.project {
@@ -69,8 +69,8 @@ uploadArchives {
 
             developers {
                 developer {
-                    id 'myid'
-                    name 'Chaobin'
+                    id 'chaobin'
+                    name 'Chaobin Wu'
                     email 'chaobinwu89@gmail.com'
                 }
             }
