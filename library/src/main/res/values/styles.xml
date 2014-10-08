@@ -1,0 +1,13 @@
+<resources>
+    <style name="IndexImageViewStyle">
+        <item name="indexFontSize">8sp</item>
+        <item name="indexBackground">#2B6695</item>
+        <item name="indexFontColor">@android:color/white</item>
+        <item name="circleBackground">#2B6695</item>
+        <item name="gradientColorArray">@array/gradient_color</item>
+        <item name="indexEnable">true</item>
+        <item name="gradientEnable">false</item>
+        <item name="strokeColor">@android:color/white</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+</resources>

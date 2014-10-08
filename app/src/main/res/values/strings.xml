@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="default_style">Default config:</string>
+    <color name="color_1">#ff5722</color>
+    <color name="color_2">#cddc39</color>
+    <color name="color_3">#259b24</color>
+    <integer-array name="gradient_color">
+        <item>@color/transparent</item>
+        <item>@color/transparent</item>
+        <item>@color/color_1</item>
+        <item>@color/color_2</item>
+        <item>@color/color_3</item>
+    </integer-array>
+</resources>
