@@ -1,4 +1,4 @@
-IndexImageView
+IndexImageView  [![Build Status](https://travis-ci.org/avenwu/IndexImageView.svg?branch=master)](https://travis-ci.org/avenwu/IndexImageView)
 ==============
 
 A kind of circular image widget for Android OS.
