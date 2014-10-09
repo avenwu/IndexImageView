@@ -22,7 +22,7 @@ Import the library into Android Studio or add dependency in build.gradle
 
 Most attributes of IndexImageView can be configured through xml;
     
-    <com.avenwu.imageview.IndexImageView
+    <com.github.avenwu.imageview.IndexImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/image1"
