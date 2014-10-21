@@ -1,42 +1,85 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.avenwu.imageview.demo.app.MainActivity"
-    android:orientation="vertical"
-    android:background="#2B6695">
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.avenwu.imageview.demo.app.MainActivity"
+              android:orientation="vertical"
+              android:background="#fff"
+              android:gravity="center_horizontal"
+              android:padding="10dp">
 
-    <com.github.avenwu.imageview.IndexImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/image1"
-        app:indexBackground="#259b24"/>
-
-    <com.github.avenwu.imageview.IndexImageView
-        android:id="@+id/iv_test"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/image1"
-        android:scaleType="centerCrop"
-        app:indexText="100"
-        app:indexFontSize="20sp"
-        app:indexBackground="#ff5722"
-        app:gradientEnable="false"
-        app:circleBackground="#cddc39"
-        app:strokeColor="#259b24" />
-
-    <com.github.avenwu.imageview.IndexImageView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/image1"
-        android:scaleType="centerCrop"
-        app:indexText="121"
-        app:indexFontSize="20sp"
-        app:indexBackground="#ff5722"
-        app:gradientEnable="true"
-        app:circleBackground="#cddc39"
-        app:strokeColor="#fff"
-        app:strokeWidth="5dp"
-        app:gradientColorArray="@array/gradient_color"/>
+        android:background="#efefef"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp">
+
+        <com.github.avenwu.imageview.IndexImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image1"
+            app:indexBackground="#259b24"
+            app:indexEnable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp">
+
+        <com.github.avenwu.imageview.IndexImageView
+            android:id="@+id/iv_test"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image1"
+            android:scaleType="centerCrop"
+            app:indexText="100"
+            app:indexFontSize="20sp"
+            app:indexBackground="#ff5722"
+            app:gradientEnable="false"
+            app:circleBackground="#cddc39"
+            app:strokeColor="#259b24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp">
+
+        <com.github.avenwu.imageview.IndexImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image2"
+            android:scaleType="centerCrop"
+            app:indexText="121"
+            app:indexFontSize="20sp"
+            app:indexBackground="#ff5722"
+            app:gradientEnable="true"
+            app:circleBackground="#cddc39"
+            app:strokeColor="#fff"
+            app:strokeWidth="5dp"
+            app:gradientColorArray="@array/gradient_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp">
+
+        <com.github.avenwu.imageview.IndexImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image2"
+            app:indexBackground="#259b24"
+            app:indexEnable="false"
+            app:strokeWidth="0dp"/>
+    </LinearLayout>
 </LinearLayout>

@@ -3,10 +3,13 @@ IndexImageView  [![Build Status](https://travis-ci.org/avenwu/IndexImageView.svg
 
 A kind of circular image widget for Android OS.
 
+[![Get it on Google Play](http://www.android.com/images/brand/get_it_on_play_logo_small.png)](https://play.google.com/store/apps/details?id=com.github.avenwu.imageview.demo.app)
+
+
 	#clone
 	git clone https://github.com/avenwu/IndexImageView.git
 
-![Screenshot](https://github.com/avenwu/IndexImageView/raw/master/device-2014-09-22-231400.png)
+![Screenshot](https://github.com/avenwu/IndexImageView/raw/master/device-2014-10-21-164818.png)
 
 ## Features
 The main feature can be seen from the snapshot above; 

@@ -11,14 +11,24 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    signingConfigs {
+        release {
+            storeFile file(key_store)
+            storePassword key_store_password
+            keyAlias key_alias
+            keyPassword key_alias_password
+        }
+    }
     buildTypes {
         release {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
 
 dependencies {
-    compile project(':library')
+    //    compile project(':library')
+    compile 'com.github.avenwu:IndexImageView:1.0.1'
 }
