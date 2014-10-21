@@ -10,8 +10,10 @@
     <integer-array name="gradient_color">
         <item>@color/transparent</item>
         <item>@color/transparent</item>
-        <item>@color/color_1</item>
+        <item>@color/transparent</item>
+        <item>@color/transparent</item>
+        <item>@color/transparent</item>
+        <item>@color/transparent</item>
         <item>@color/color_2</item>
-        <item>@color/color_3</item>
     </integer-array>
 </resources>
