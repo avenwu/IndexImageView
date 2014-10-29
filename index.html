@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Indeximageview by avenwu</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Indeximageview</h1>
+        <h2>A kind of circular image widget for Android OS </h2>
+        <a href="https://github.com/avenwu/IndexImageView" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="indeximageview" class="anchor" href="#indeximageview"><span class="octicon octicon-link"></span></a>IndexImageView</h1>
+
+<p>A kind of circular image widget for Android OS.</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.github.avenwu.imageview.demo.app"><img src="http://www.android.com/images/brand/get_it_on_play_logo_small.png" alt="Get it on Google Play"></a></p>
+
+<pre><code>#clone
+git clone https://github.com/avenwu/IndexImageView.git
+</code></pre>
+
+<p><img src="https://github.com/avenwu/IndexImageView/raw/master/device-2014-10-21-164818.png" alt="Screenshot"></p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<p>The main feature can be seen from the snapshot above; </p>
+
+<ul>
+<li>Set Text index above the image view;</li>
+<li>Add configured border;</li>
+<li>Inner gradient available;</li>
+</ul>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Import the library into Android Studio or add dependency in build.gradle</p>
+
+<pre><code>compile 'com.github.avenwu:IndexImageView:1.0.1'
+</code></pre>
+
+<p>Most attributes of IndexImageView can be configured through xml;</p>
+
+<pre><code>&lt;com.github.avenwu.imageview.IndexImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/image1"
+    android:scaleType="centerCrop"
+    app:indexText="100"
+    app:indexFontSize="20sp"
+    app:indexBackground="#ff5722"
+    app:gradientEnable="false"
+    app:circleBackground="#cddc39"
+    app:strokeColor="#259b24" /&gt;
+</code></pre>
+
+<p>However you can also make new instance dynamically;</p>
+
+<pre><code>IndexImageView imageView = new IndexImageView(this);
+imageView.setImageResource(R.drawable.image1);
+imageView.setIndexEnable(true);
+imageView.setText("121");
+</code></pre>
+
+<p>For more detail please look into the sample app;</p>
+
+<h2>
+<a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h2>
+
+<p>Any improvemet on this project will be appreaciated, so you can fork it and make changes freely and pull requests.</p>
+
+<ul>
+<li>Email:  <a href="mailto:chaobinwu89@gmail.com">chaobinwu89@gmail.com</a>
+</li>
+<li>Wiki: <a href="https://github.com/avenwu/IndexImageView/wiki">https://github.com/avenwu/IndexImageView/wiki</a>
+</li>
+<li>Bug Report: <a href="https://github.com/avenwu/IndexImageView/issues">https://github.com/avenwu/IndexImageView/issues</a>
+</li>
+</ul>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2014 Chaobin Wu</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/avenwu/IndexImageView/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/avenwu/IndexImageView/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/avenwu/IndexImageView"></a> is maintained by <a href="https://github.com/avenwu">avenwu</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
